@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/star-wars-quiz/static/js/main.1f68f5b5.chunk.js",
+    "main.js.map": "/star-wars-quiz/static/js/main.1f68f5b5.chunk.js.map",
+    "runtime~main.js": "/star-wars-quiz/static/js/runtime~main.6eac230a.js",
+    "runtime~main.js.map": "/star-wars-quiz/static/js/runtime~main.6eac230a.js.map",
+    "static/js/2.3310f33a.chunk.js": "/star-wars-quiz/static/js/2.3310f33a.chunk.js",
+    "static/js/2.3310f33a.chunk.js.map": "/star-wars-quiz/static/js/2.3310f33a.chunk.js.map",
+    "index.html": "/star-wars-quiz/index.html",
+    "precache-manifest.e6903f0224623345fbe25254b49de9fe.js": "/star-wars-quiz/precache-manifest.e6903f0224623345fbe25254b49de9fe.js",
+    "service-worker.js": "/star-wars-quiz/service-worker.js"
+  }
+}
