@@ -1,20 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
+import Planets from "./pages/Planet";
+import PlanetContext from "./context/PlanetContext";
+import Start from "./assets/svg/start.svg";
+export default function App() {
+  const [planetInfo, stePlanetInfo] = useState({});
 
-function App() {
+  const handleNextPlanet = () => {
+    const randomPlanet = Math.ceil(Math.random() * 60 + 1);
+    getPlanet(randomPlanet);
+  };
+  async function getPlanet(planetId) {
+    const response = await fetch(`https://swapi.co/api/planets/${planetId}`);
+    const planet = await response.json();
+    stePlanetInfo(planet);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <PlanetContext.Provider value={{ planetInfo, handleNextPlanet }}>
+      <div className="container">
+        {Object.values(planetInfo).length ? (
+          <Planets />
+        ) : (
+          <img className="start" src={Start} onClick={handleNextPlanet} />
+        )}
+      </div>
+    </PlanetContext.Provider>
   );
 }
-
-export default App;

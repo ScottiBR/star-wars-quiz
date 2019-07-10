@@ -1,0 +1,16 @@
+.start {
+  animation: reduce-size 3s ease-out;
+  animation-fill-mode: forwards;
+  position: absolute;
+  top: 30%;
+}
+@keyframes reduce-size {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(0.5);
+  }
+}
