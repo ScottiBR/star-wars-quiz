@@ -11,16 +11,21 @@ html {
   justify-content: center;
   padding: 30px;
   font-family: "Roboto", sans-serif;
-  font-size: 6vw;
-
+  font-size: 3vw;
+  @media screen and (max-width: $break-medium) {
+    font-size: 6vw;
+  }
   &__name {
     animation: slide-text-appear 600ms forwards linear;
     border-bottom: 2px solid $ligth-gray;
-    font-size: 9vw;
+    font-size: 6vw;
     font-weight: bold;
     color: $yellow-star-wars;
     margin-bottom: 20px;
     text-align: center;
+    @media screen and (max-width: $break-medium) {
+      font-size: 9vw;
+    }
   }
   &__info {
     animation: slide-text-appear 800ms forwards linear;
