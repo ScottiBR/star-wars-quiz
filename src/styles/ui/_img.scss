@@ -4,6 +4,9 @@
   justify-content: center;
   align-content: center;
   margin-top: 30vh;
+  &:hover {
+    cursor: pointer;
+  }
 }
 .click-start {
   position: relative;
@@ -13,6 +16,9 @@
   top: -7vw;
   left: 50%;
   animation-delay: 6s;
+  &:hover {
+    cursor: pointer;
+  }
 }
 @keyframes reduce-size {
   from {

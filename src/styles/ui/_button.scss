@@ -9,6 +9,7 @@
   outline: none;
 
   &:hover {
+    cursor: pointer;
     background-color: darken($yellow-star-wars, 15%);
   }
 }
