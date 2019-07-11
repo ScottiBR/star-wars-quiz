@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import PlanetContext from "../context/PlanetContext";
+import bb8 from "../assets/gif/bb8.gif";
 
 export default function Planet() {
   const { planetInfo, handleNextPlanet, showPlanets } = useContext(
@@ -42,7 +43,7 @@ export default function Planet() {
           </div>
         </div>
       ) : (
-        <p className="planet__loading">Loading</p>
+        <img className="planet__loading" src={bb8} />
       )}
     </div>
   );

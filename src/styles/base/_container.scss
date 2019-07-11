@@ -37,26 +37,10 @@ html {
     margin-top: 30px;
   }
   &__loading {
-    animation: text-appear 3s forwards linear;
-    color: $yellow-star-wars;
-    font-weight: bold;
-    font-size: 9vw;
-    text-align: center;
+    position: absolute;
+    top: 30%;
+    width: 10vw;
     display: inline-block;
-  }
-}
-
-@keyframes text-appear {
-  0% {
-    opacity: 0;
-    transform: perspective(300px) rotateX(25deg) translateY(35vh);
-  }
-  15% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    transform: perspective(300px) rotateX(25deg) translateY(-50px);
   }
 }
 

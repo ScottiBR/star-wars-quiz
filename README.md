@@ -1,8 +1,10 @@
 ### Project
 
-Star Wars Quiz Game, made with React, SASS, Redux
+Star Wars Quiz Game, made with React and hooks, also SASS for CSS pre-processor.
 
-See the running app in [https://scottibr.github.io/star-wars-quiz/](https://scottibr.github.io/star-wars-quiz/)
+The goal of this game, is given a random planet from the star wars movies, guess the climate, temperature, terrain and how many films he appeard
+
+See the preview in [https://scottibr.github.io/star-wars-quiz/](https://scottibr.github.io/star-wars-quiz/)
 
 ## Available Scripts
 

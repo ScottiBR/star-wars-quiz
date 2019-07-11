@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Planets from "./pages/Planet";
 import PlanetContext from "./context/PlanetContext";
 import Start from "./assets/svg/start.svg";
+import handClick from "./assets/img/click.png";
 export default function App() {
   const [planetInfo, setPlanetInfo] = useState({});
   const [showPlanets, setShowPlanets] = useState(false);
@@ -30,7 +31,14 @@ export default function App() {
         {startFired ? (
           <Planets />
         ) : (
-          <img className="start" src={Start} onClick={handleStartButton} />
+          <>
+            <img className="start" src={Start} onClick={handleStartButton} />
+            <img
+              className="click-start"
+              src={handClick}
+              onClick={handleStartButton}
+            />
+          </>
         )}
       </div>
     </PlanetContext.Provider>
