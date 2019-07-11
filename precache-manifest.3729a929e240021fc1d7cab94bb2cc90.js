@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "69955a21b1cced8c511b61e0e047f33d",
+    "revision": "8b98dc4ceef3fdd9dde84139f8aed2d1",
     "url": "/star-wars-quiz/index.html"
   },
   {
-    "revision": "7e823cc8772711d2726f",
-    "url": "/star-wars-quiz/static/css/main.42f0a7bc.chunk.css"
+    "revision": "e6b5376bc3511f1868b7",
+    "url": "/star-wars-quiz/static/css/main.8001f366.chunk.css"
   },
   {
     "revision": "b15a64ca72a6382c2597",
     "url": "/star-wars-quiz/static/js/2.d4fb325a.chunk.js"
   },
   {
-    "revision": "7e823cc8772711d2726f",
+    "revision": "e6b5376bc3511f1868b7",
     "url": "/star-wars-quiz/static/js/main.a87d048b.chunk.js"
   },
   {
