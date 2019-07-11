@@ -1,12 +1,14 @@
 .start {
-  animation: reduce-size 3s ease-out;
-  animation-fill-mode: forwards;
-  position: absolute;
-  top: 30%;
+  animation: reduce-size 5s forwards ease-out;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 30vh;
 }
 @keyframes reduce-size {
   0% {
     opacity: 0;
+    transform: scale(1.5);
   }
 
   100% {

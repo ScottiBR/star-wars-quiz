@@ -3,25 +3,34 @@ import Planets from "./pages/Planet";
 import PlanetContext from "./context/PlanetContext";
 import Start from "./assets/svg/start.svg";
 export default function App() {
-  const [planetInfo, stePlanetInfo] = useState({});
-
+  const [planetInfo, setPlanetInfo] = useState({});
+  const [showPlanets, setShowPlanets] = useState(false);
+  const [startFired, setStartFired] = useState(false);
   const handleNextPlanet = () => {
+    setShowPlanets(false);
     const randomPlanet = Math.ceil(Math.random() * 60 + 1);
     getPlanet(randomPlanet);
   };
   async function getPlanet(planetId) {
     const response = await fetch(`https://swapi.co/api/planets/${planetId}`);
     const planet = await response.json();
-    stePlanetInfo(planet);
+    setPlanetInfo(planet);
+    setShowPlanets(true);
   }
 
+  const handleStartButton = () => {
+    setStartFired(true);
+    handleNextPlanet();
+  };
   return (
-    <PlanetContext.Provider value={{ planetInfo, handleNextPlanet }}>
+    <PlanetContext.Provider
+      value={{ planetInfo, handleNextPlanet, showPlanets }}
+    >
       <div className="container">
-        {Object.values(planetInfo).length ? (
+        {startFired ? (
           <Planets />
         ) : (
-          <img className="start" src={Start} onClick={handleNextPlanet} />
+          <img className="start" src={Start} onClick={handleStartButton} />
         )}
       </div>
     </PlanetContext.Provider>

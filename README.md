@@ -2,7 +2,7 @@
 
 Star Wars Quiz Game, made with React, SASS, Redux
 
-See the running app in [http://localhost:3000](http://localhost:3000)
+See the running app in [https://scottibr.github.io/star-wars-quiz/](https://scottibr.github.io/star-wars-quiz/)
 
 ## Available Scripts
 

@@ -1,0 +1,14 @@
+.button__next {
+  background-color: $yellow-star-wars;
+  font-weight: bold;
+  color: black;
+  border-radius: 8px;
+  border: none;
+  padding: 15px 10px;
+  font-size: 4vw;
+  outline: none;
+
+  &:hover {
+    background-color: darken($yellow-star-wars, 15%);
+  }
+}

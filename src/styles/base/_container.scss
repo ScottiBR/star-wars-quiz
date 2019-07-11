@@ -7,4 +7,65 @@ html {
 
 .planet {
   color: darken(white, 30%);
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 6vw;
+
+  &__name {
+    animation: slide-text-appear 600ms forwards linear;
+    border-bottom: 2px solid $ligth-gray;
+    font-size: 9vw;
+    font-weight: bold;
+    color: $yellow-star-wars;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  &__info {
+    animation: slide-text-appear 800ms forwards linear;
+  }
+  &__films {
+    animation: slide-text-appear 1s forwards linear;
+    padding: 30px 0;
+    text-align: center;
+  }
+  &__button {
+    animation: slide-text-appear 1s forwards linear;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  &__loading {
+    animation: text-appear 3s forwards linear;
+    color: $yellow-star-wars;
+    font-weight: bold;
+    font-size: 9vw;
+    text-align: center;
+    display: inline-block;
+  }
+}
+
+@keyframes text-appear {
+  0% {
+    opacity: 0;
+    transform: perspective(300px) rotateX(25deg) translateY(35vh);
+  }
+  15% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: perspective(300px) rotateX(25deg) translateY(-50px);
+  }
+}
+
+@keyframes slide-text-appear {
+  0% {
+    opacity: 0;
+    transform: perspective(300px) rotateX(25deg) translateY(35vh);
+  }
+  100% {
+    opacity: 1;
+  }
 }
