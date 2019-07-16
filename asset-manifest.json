@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/star-wars-quiz/static/css/main.8001f366.chunk.css",
+    "main.css": "/star-wars-quiz/static/css/main.f10ff4c7.chunk.css",
     "main.js": "/star-wars-quiz/static/js/main.a87d048b.chunk.js",
     "main.js.map": "/star-wars-quiz/static/js/main.a87d048b.chunk.js.map",
     "runtime~main.js": "/star-wars-quiz/static/js/runtime~main.6eac230a.js",
@@ -8,9 +8,9 @@
     "static/js/2.d4fb325a.chunk.js": "/star-wars-quiz/static/js/2.d4fb325a.chunk.js",
     "static/js/2.d4fb325a.chunk.js.map": "/star-wars-quiz/static/js/2.d4fb325a.chunk.js.map",
     "index.html": "/star-wars-quiz/index.html",
-    "precache-manifest.3729a929e240021fc1d7cab94bb2cc90.js": "/star-wars-quiz/precache-manifest.3729a929e240021fc1d7cab94bb2cc90.js",
+    "precache-manifest.459bb9f4af9e150c342c2315ea384823.js": "/star-wars-quiz/precache-manifest.459bb9f4af9e150c342c2315ea384823.js",
     "service-worker.js": "/star-wars-quiz/service-worker.js",
-    "static/css/main.8001f366.chunk.css.map": "/star-wars-quiz/static/css/main.8001f366.chunk.css.map",
+    "static/css/main.f10ff4c7.chunk.css.map": "/star-wars-quiz/static/css/main.f10ff4c7.chunk.css.map",
     "static/media/bb8.gif": "/star-wars-quiz/static/media/bb8.0786e477.gif",
     "static/media/app.scss": "/star-wars-quiz/static/media/bg.d6f781bd.jpg",
     "static/media/start.svg": "/star-wars-quiz/static/media/start.d65eae2d.svg"
