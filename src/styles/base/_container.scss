@@ -44,7 +44,10 @@ html {
   &__loading {
     position: absolute;
     top: 30%;
-    width: 10vw;
+    @media screen and (max-width: $break-medium) {
+      width: 10vw;
+    }
+    width: 4vw;
     display: inline-block;
   }
 }
